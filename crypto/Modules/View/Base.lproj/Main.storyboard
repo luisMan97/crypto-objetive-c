@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rbM-wb-L67">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Crypto List-->
+        <scene sceneID="3Ds-gq-e3d">
+            <objects>
+                <viewController id="hJS-9v-ukr" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uPk-xB-g8E">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="J1v-QB-uRZ">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" red="0.087400675740000003" green="0.087400675740000003" blue="0.087400675740000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AFw-Od-Fnc"/>
+                        <color key="backgroundColor" red="0.087400675740000003" green="0.087400675740000003" blue="0.087400675740000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="J1v-QB-uRZ" firstAttribute="leading" secondItem="AFw-Od-Fnc" secondAttribute="leading" id="1yn-TT-Oej"/>
+                            <constraint firstItem="AFw-Od-Fnc" firstAttribute="trailing" secondItem="J1v-QB-uRZ" secondAttribute="trailing" id="LqV-1x-Xd1"/>
+                            <constraint firstItem="J1v-QB-uRZ" firstAttribute="top" secondItem="AFw-Od-Fnc" secondAttribute="top" id="f8W-eK-ZK4"/>
+                            <constraint firstItem="AFw-Od-Fnc" firstAttribute="bottom" secondItem="J1v-QB-uRZ" secondAttribute="bottom" id="lBq-LF-UHL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Crypto List" id="GjC-QN-gOB"/>
+                    <connections>
+                        <outlet property="tableView" destination="J1v-QB-uRZ" id="QF4-C4-my1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zi7-ns-e2s" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1336.6412213740457" y="17.605633802816904"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="V4s-Za-eOe">
+            <objects>
+                <viewController id="LjF-qo-sE2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="COY-li-Bvg">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NLM-bi-ve3">
+                                <rect key="frame" x="0.0" y="44" width="393" height="764"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to CryptoWallet!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ok-kG-vyb">
+                                        <rect key="frame" x="25" y="88" width="194" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="UvU-So-swn"/>
+                                            <constraint firstAttribute="width" constant="194" id="zvf-YM-vd4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZu-sa-RsF">
+                                        <rect key="frame" x="25" y="194" width="340" height="79"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="79" id="ikf-4c-4nD"/>
+                                        </constraints>
+                                        <string key="text">If you are creating a new wallet press the Generate button. Take note of the mnemonic phrase, it should be stored in a safe place.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.69701729950000002" green="0.69701729950000002" blue="0.69701729950000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DeC-Dh-dv1">
+                                        <rect key="frame" x="8" y="308" width="377" height="81.333333333333314"/>
+                                        <string key="text">Address list elephant genuine thunder conduct avocado educate chornic uselless basic rought notable noble water bless labor monster muscle bike view caution river flavor.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2nf-h2-xuw">
+                                        <rect key="frame" x="25" y="592" width="340" height="73"/>
+                                        <color key="backgroundColor" red="0.69701729950000002" green="0.2305354644" blue="0.28816295240000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="73" id="K28-XX-O0c"/>
+                                            <constraint firstAttribute="width" constant="340" id="MWp-GW-Re8"/>
+                                            <constraint firstAttribute="height" constant="73" id="is6-6I-vvk"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="ACCESS WALLET"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="hJS-9v-ukr" kind="show" id="5It-DM-0kD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1373031921" green="0.2494281991" blue="0.33333334329999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="MZu-sa-RsF" firstAttribute="top" secondItem="6Ok-kG-vyb" secondAttribute="bottom" constant="36" id="1JI-uV-uSn"/>
+                                    <constraint firstItem="DeC-Dh-dv1" firstAttribute="leading" secondItem="NLM-bi-ve3" secondAttribute="leading" constant="8" id="43R-Lu-gIO"/>
+                                    <constraint firstItem="MZu-sa-RsF" firstAttribute="leading" secondItem="2nf-h2-xuw" secondAttribute="leading" id="7k0-5u-MNR"/>
+                                    <constraint firstAttribute="bottom" secondItem="2nf-h2-xuw" secondAttribute="bottom" constant="99" id="Hor-eC-Jwa"/>
+                                    <constraint firstItem="6Ok-kG-vyb" firstAttribute="leading" secondItem="NLM-bi-ve3" secondAttribute="leading" constant="25" id="Ji2-Ia-Ofe"/>
+                                    <constraint firstItem="6Ok-kG-vyb" firstAttribute="top" secondItem="NLM-bi-ve3" secondAttribute="top" constant="88" id="Sew-lQ-rcp"/>
+                                    <constraint firstAttribute="trailing" secondItem="DeC-Dh-dv1" secondAttribute="trailing" constant="8" id="YWA-DI-1ry"/>
+                                    <constraint firstItem="MZu-sa-RsF" firstAttribute="trailing" secondItem="2nf-h2-xuw" secondAttribute="trailing" id="hrd-wG-nrr"/>
+                                    <constraint firstItem="MZu-sa-RsF" firstAttribute="leading" secondItem="6Ok-kG-vyb" secondAttribute="leading" id="nX2-EI-gLD"/>
+                                    <constraint firstItem="DeC-Dh-dv1" firstAttribute="top" secondItem="MZu-sa-RsF" secondAttribute="bottom" constant="35" id="zdk-9Q-taO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="EF8-8g-rgE"/>
+                        <color key="backgroundColor" red="0.1373031921" green="0.2494281991" blue="0.33333334329999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="NLM-bi-ve3" firstAttribute="top" secondItem="COY-li-Bvg" secondAttribute="topMargin" constant="-59" id="7cm-eM-kl8"/>
+                            <constraint firstItem="NLM-bi-ve3" firstAttribute="centerY" secondItem="COY-li-Bvg" secondAttribute="centerY" id="Bxz-76-7I0"/>
+                            <constraint firstItem="NLM-bi-ve3" firstAttribute="centerX" secondItem="COY-li-Bvg" secondAttribute="centerX" id="euv-Xk-BA4"/>
+                            <constraint firstItem="NLM-bi-ve3" firstAttribute="leading" secondItem="EF8-8g-rgE" secondAttribute="leading" id="mYt-jO-Trg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="TGn-61-BIy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KRQ-iF-tAi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="408.39694656488547" y="18.30985915492958"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="piG-4a-js1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rbM-wb-L67" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2ai-eJ-dhs">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LjF-qo-sE2" kind="relationship" relationship="rootViewController" id="JEW-zn-g3j"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x0F-ML-9Ba" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-518.32061068702285" y="18.30985915492958"/>
+        </scene>
+    </scenes>
+</document>
